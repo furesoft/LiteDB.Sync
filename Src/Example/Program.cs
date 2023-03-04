@@ -1,13 +1,15 @@
-﻿namespace  Example;
+﻿using OwlCore.Extensions;
+
+namespace  Example;
 
 public static class Program
 {
     public static void Main()
     {
-        var db = new LiteDB.Sync.SyncedLiteDatabase(".\\test.db");
+        var db = new LiteDB.Sync.SyncedLiteDatabase("Filename=.\\test.db; Connection=shared;");
         db.AfterSync += () =>
         {
-            var users = db.GetCollection<User>().FindAll();
+            var users = db.Query<User>().ToArray();
 
             foreach (var user in users)
             {
@@ -21,17 +23,11 @@ public static class Program
         Console.WriteLine("Enter Username: ");
         var username = Console.ReadLine();
 
-        db.BeginTrans();
+        db.Insert(new User() { Username = username });
 
-        db.GetCollection<User>().Insert(new User {Username = username});
-
-        db.Commit(); // commit triggers sync
-
-        var users = db.GetCollection<User>().FindAll();
-
-        foreach (var user in users)
+        while (true)
         {
-            Console.WriteLine(user.Username);
+            
         }
     }
 }
