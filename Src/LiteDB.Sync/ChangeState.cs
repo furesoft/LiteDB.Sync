@@ -6,5 +6,6 @@ public enum ChangeState
     Insert,
     Update,
     Delete,
+    DeleteMany,
     Upsert
 }

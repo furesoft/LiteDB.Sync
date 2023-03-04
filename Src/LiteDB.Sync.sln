@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteDB.Sync", "LiteDB.Sync\LiteDB.Sync.csproj", "{25AC44E4-3E65-449E-8CFE-FF608DC7299D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{0D1B4638-4708-42C6-8D0E-E96C9D0EA03C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25AC44E4-3E65-449E-8CFE-FF608DC7299D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25AC44E4-3E65-449E-8CFE-FF608DC7299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25AC44E4-3E65-449E-8CFE-FF608DC7299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25AC44E4-3E65-449E-8CFE-FF608DC7299D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1B4638-4708-42C6-8D0E-E96C9D0EA03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1B4638-4708-42C6-8D0E-E96C9D0EA03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1B4638-4708-42C6-8D0E-E96C9D0EA03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1B4638-4708-42C6-8D0E-E96C9D0EA03C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
